@@ -14,5 +14,11 @@ def greet(name=""):
     return "Hello {}".format(name)
 
 
+@app.route('/temperature/<celsius>')
+def celsius_to_fahrenheit(celsius=""):
+    fahrenheit = float(celsius) * 9.0 / 5 + 32
+    return "Your input value ({:.1f} celsius) is equivalent to {:.2f} fahrenheit.".format(float(celsius), fahrenheit)
+
+
 if __name__ == '__main__':
     app.run()
