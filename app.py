@@ -1,3 +1,9 @@
+"""
+Create multiple routes with functions that require an input via the URL to return an output.
+
+Flask Project. Created by Malia D'Mello, May 2021.
+"""
+
 from flask import Flask
 
 app = Flask(__name__)
